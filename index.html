@@ -1,18 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Digital</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    <body>
-  
-        <audio controls loop>
-            <source src="BackMusic.mp3"autoplay>
-        </audio>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Mi arte.jpg') no-repeat center center/cover;
+            color: #333;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-out;
+        }
 
-        <h1>This is my portfolio</h1>
-    </body>
+        header {
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-top: 15px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        section:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        section:nth-child(4) {
+            animation-delay: 1s;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Set Figueroa Meléndez</h1>
+        <img src="Mi foto.jpg" alt="Set" class="profile-pic">
+        <p>Desarrollador Web | Diseñador | Programador</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Escribe una breve biografía sobre ti, tus habilidades y lo que haces.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="enlace-al-proyecto" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="enlace-al-proyecto" target="_blank">Ver Proyecto</a>
+        </div>
+        <!-- Añade más proyectos según sea necesario -->
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Correo electrónico: <a href="mailto:setfigueroa928@outlook.com">setfigueroa928@outlook.com</a></p>
+        <p>número de teléfono: (939) 438-1640</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
